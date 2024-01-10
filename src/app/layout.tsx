@@ -1,4 +1,4 @@
-import './globals.css';
+import './globals.scss';
 
 import { Sidebar } from '@src/components/sidebar';
 import type { Metadata } from 'next';
@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body className={inter.className}>
-        <div className="grid-cols-app grid min-h-screen">
+        <div className="grid min-h-screen grid-cols-app">
           <Sidebar />
           <main className="px-4 pb-12 pt-8">{children}</main>
         </div>

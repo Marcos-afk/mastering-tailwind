@@ -1,0 +1,25 @@
+@import 'tailwindcss/base';
+
+@import 'tailwindcss/components';
+
+@import 'tailwindcss/utilities';
+
+::-webkit-scrollbar {
+  @apply h-[0.313rem] w-[0.313rem];
+}
+
+::-webkit-scrollbar-track {
+  @apply rounded-md bg-gray-100 p-1;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply cursor-grab rounded-md bg-violet-300;
+
+  &:active {
+    @apply cursor-grabbing;
+  }
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-violet-300;
+}
