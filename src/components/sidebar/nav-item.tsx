@@ -7,7 +7,7 @@ interface NavItemProps {
   icon: ElementType;
 }
 
-export const NavItem = ({ title, icon: Icon }: NavItemProps) => {
+export function NavItem({ title, icon: Icon }: NavItemProps) {
   return (
     <a
       href="#"
@@ -20,4 +20,4 @@ export const NavItem = ({ title, icon: Icon }: NavItemProps) => {
       <ChevronDown className="h- ml-auto w-5 text-zinc-400 group-hover:text-violet-400" />
     </a>
   );
-};
+}
